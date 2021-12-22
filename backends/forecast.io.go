@@ -149,7 +149,7 @@ func (c *forecastConfig) parseCond(dp forecastDataPoint) (ret iface.Cond, err er
 		ret.WindspeedKmph = dp.WindSpeed
 	}
 
-	//ret.WindGustKmph not provided by forecast.io :(
+	//ret.WindGustKmph not provided by forecast.io :( " im sad "
 
 	if dp.WindBearing != nil && *dp.WindBearing >= 0 {
 		p := int(*dp.WindBearing) % 360
